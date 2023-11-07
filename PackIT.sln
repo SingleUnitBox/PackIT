@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PackIt.UnitTests", "PackIt.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PackIT.Application", "PackIT.Application\PackIT.Application.csproj", "{D515F881-17F7-47CE-9085-D60C8BBE33FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PackIT.Shared", "PackIT.Shared\PackIT.Shared.csproj", "{3DA34C8D-B5F7-4AE5-8278-A169233E0881}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PackIT.Shared", "PackIT.Shared\PackIT.Shared.csproj", "{3DA34C8D-B5F7-4AE5-8278-A169233E0881}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PackIT.Infrastructure", "PackIT.Infrastructure\PackIT.Infrastructure.csproj", "{D36B0C75-5887-4915-8C5B-F1B135B5BCB9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{3DA34C8D-B5F7-4AE5-8278-A169233E0881}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3DA34C8D-B5F7-4AE5-8278-A169233E0881}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3DA34C8D-B5F7-4AE5-8278-A169233E0881}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D36B0C75-5887-4915-8C5B-F1B135B5BCB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D36B0C75-5887-4915-8C5B-F1B135B5BCB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D36B0C75-5887-4915-8C5B-F1B135B5BCB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D36B0C75-5887-4915-8C5B-F1B135B5BCB9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

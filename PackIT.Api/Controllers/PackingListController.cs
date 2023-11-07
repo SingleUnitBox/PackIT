@@ -3,6 +3,8 @@ using PackIt.Shared.Abstractions.Commands;
 using PackIt.Shared.Abstractions.Queries;
 using PackIT.Application.DTO;
 using PackIT.Application.Queries;
+using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace PackIT.Api.Controllers
@@ -21,7 +23,19 @@ namespace PackIT.Api.Controllers
         {
             var result = await _queryDispatcher.QueryAsync(query);
             return OkOrNotFound(result);
+        }
 
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<PackingListDto>>> Get([FromQuery] SearchPackingLists query)
+        {
+            var result = await _queryDispatcher.QueryAsync(query);
+
+            return OkOrNotFound(result);
+        }
+        [HttpGet("test/{fromRoute:guid}")]
+        public async Task<ActionResult> GetTest([FromRoute] Guid fromRoute)
+        {
+            return Ok(fromRoute);
         }
     }
 }

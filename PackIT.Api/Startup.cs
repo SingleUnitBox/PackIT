@@ -11,6 +11,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using PackIT.Shared;
+using PackIT.Application;
+using PackIT.Infrastructure;
 
 namespace PackIT.Api
 {
